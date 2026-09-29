@@ -279,11 +279,23 @@ body.menu-closed .shell { margin-left: 0; }
    HOME
    ========================================================================== */
 .hero {
-    position: relative; overflow: hidden; border-radius: 22px; color: #fff;
-    min-height: 420px; display: grid; align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    color: #fff;
+    min-height: 420px;
+    display: grid;
+    align-items: center;
+
     background:
-        linear-gradient(100deg, rgba(6, 60, 58, .92) 0%, rgba(13, 148, 136, .72) 55%, rgba(13, 148, 136, .35) 100%),
-        url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80') center/cover;
+        linear-gradient(
+            100deg,
+            rgba(6, 60, 58, .92) 0%,
+            rgba(13, 148, 136, .72) 55%,
+            rgba(13, 148, 136, .35) 100%
+        ),
+        url('/images/navotas-hospital.jpg') center/cover;
+
     padding: 48px;
 }
 .hero-inner { max-width: 620px; }

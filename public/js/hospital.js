@@ -40,16 +40,6 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-// ---- Generic search / filter for card grids ----
-// Markup contract:
-//   <div data-filter-scope>
-//     <input data-filter-input>
-//     <button data-filter-chip="Cardiology">…</button>   (optional, "all" resets)
-//     <select data-filter-select>…</select>              (optional)
-//     <span data-filter-count></span>
-//     <div data-filter-item data-search="text…" data-group="Cardiology" data-status="Available">…</div>
-//     <div class="empty-state" data-filter-empty>…</div>
-//   </div>
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('[data-filter-scope]').forEach(function (scope) {
         var input  = scope.querySelector('[data-filter-input]');
